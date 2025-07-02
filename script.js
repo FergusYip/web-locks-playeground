@@ -34,6 +34,7 @@ function acquireLock() {
   }
   const abortController = new AbortController();
   lockStatus.textContent = 'Acquiring...';
+  log('Acquiring lock');
   const deferred = makeDeferred();
   abortController.signal.addEventListener('abort', () => {
     deferred.reject();
