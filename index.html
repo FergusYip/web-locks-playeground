@@ -17,8 +17,14 @@
       <button id="abort-lock-btn">Abort Lock</button>
       <button id="abort-lock-btn-broadcast">Broadcast Abort Lock</button>
     </div>
-    <input type="checkbox" name="release-on-freeze" id="release-on-freeze" checked />
-    <label for="release-on-freeze">Release on freeze</label>
+    <label>
+      <input type="checkbox" id="release-on-freeze" checked />
+      Release on freeze</label
+    >
+    <div>
+      Go to <a href="chrome://discards">chrome://discards</a> to manually freeze and discard pages
+      (link doesn't work)
+    </div>
     <p>Lock Status: <span id="lock-status">Not Acquired</span></p>
     <section>
       <h2>Events</h2>
