@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Locks API Playground</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Web Locks API Playground</h1>
+    <div>
+      <button id="acquire-lock-btn">Acquire Lock</button>
+      <button id="acquire-autorelease-lock-btn">Acquire 10s lock</button>
+    </div>
+    <div>
+      <button id="release-lock-btn">Release Lock</button>
+      <button id="abort-lock-btn">Abort Lock</button>
+      <button id="abort-lock-btn-broadcast">Broadcast Abort Lock</button>
+    </div>
+    <input type="checkbox" name="release-on-freeze" id="release-on-freeze" checked />
+    <label for="release-on-freeze">Release on freeze</label>
+    <p>Lock Status: <span id="lock-status">Not Acquired</span></p>
+    <section>
+      <h2>Events</h2>
+      <pre id="events-log"></pre>
+    </section>
+  </body>
+</html>
